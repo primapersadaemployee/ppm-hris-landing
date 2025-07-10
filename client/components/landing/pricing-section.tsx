@@ -29,6 +29,27 @@ const plans = [
   //   popular: false,
   // },
   {
+    name: "Perbulan",
+    // price: "Custom",
+    // period: "hubungi kami",
+    description:
+      "Cocok untuk perusahaan yang ingin mencoba layanan kami tanpa komitmen panjang. Bayar per bulan dan berhenti kapan saja.",
+    badge: "",
+    // features: [
+    //   "Semua fitur Professional",
+    //   "Custom workflow",
+    //   "Advanced security",
+    //   "Dedicated account manager",
+    //   "On-premise deployment",
+    //   "Custom integration",
+    //   "24/7 phone support",
+    //   "Training & onboarding",
+    // ],
+    buttonText: "Hubungi Sales",
+    buttonVariant: "outline" as const,
+    popular: false,
+  },
+  {
     name: "Pertahun",
     // price: "199.000",
     // period: "per bulan",
@@ -50,11 +71,11 @@ const plans = [
     popular: true,
   },
   {
-    name: "Perbulan",
+    name: "Customize",
     // price: "Custom",
     // period: "hubungi kami",
     description:
-      "Cocok untuk perusahaan yang ingin mencoba layanan kami tanpa komitmen panjang. Bayar per bulan dan berhenti kapan saja.",
+      "Cocok untuk perusahaan dengan kebutuhan khusus. Sesuaikan fitur, kapasitas, dan integrasi sesuai workflow perusahaan Anda.",
     badge: "",
     // features: [
     //   "Semua fitur Professional",
@@ -94,7 +115,7 @@ export function PricingSection() {
         </div>
 
         <div className="flex justify-center items-center" data-aos="fade-up">
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-12">
+          <div className="flex flex-col lg:grid lg:grid-cols-3 items-center justify-center gap-8 mb-12">
             {plans.map((plan, index) => (
               <Card
                 key={index}

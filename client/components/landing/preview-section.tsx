@@ -1,4 +1,6 @@
 import { Badge } from "@/components/ui/badge";
+import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 const featuresWeb = [
   "Dashboard HR: Data kehadiran, payroll, kontrak berakhir",
@@ -89,6 +91,16 @@ export function PreviewSection() {
               data-aos="fade-left"
               loading="lazy"
             />
+          </div>
+        </div>
+        <div className="bg-primary/5 rounded-2xl p-8 mt-12">
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
+            Ingin Tahu Lebih Lanjut?
+          </h3>
+          <div className="flex justify-center items-center">
+            <a href="/document/proposal.pdf" download>
+              <Button size="lg">Download Proposal</Button>
+            </a>
           </div>
         </div>
       </div>
